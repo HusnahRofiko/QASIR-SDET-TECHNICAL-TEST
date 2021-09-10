@@ -1,0 +1,35 @@
+
+ HashMap<String, Integer> row1 = new HashMap<String, Integer>();
+    row1.put("a", 10);
+    row1.put("b", 20);
+    row1.put("c", 30);
+  
+HashMap<String, Integer> row2 = new HashMap<String, Integer>();
+	row2.put("a", 3);
+	row2.put("c", 6);
+	row2.put("d", 3);
+
+HashMap<String, Integer> SumRow = new HashMap<String, Integer>();
+
+char alphabet;
+for (alphabet = 'a'; alphabet <= 'd'; alphabet++) {
+	nilairow1 = row1.get(""+alphabet+"");
+	nilairow2= row2.get(""+alphabet+"");
+	if((nilairow1).equals(null)){
+		totalrow = nilairow2;
+		//System.out.println(totalrow);
+		SumRow.put(""+alphabet+"", totalrow);
+		System.out.println(SumRow);
+	}
+	else if((nilairow2).equals(null)){
+		totalrow = nilairow1;
+		//System.out.println(totalrow);
+		SumRow.put(""+alphabet+"", totalrow);
+		System.out.println(SumRow);
+	}else{
+		totalrow = nilairow1+ nilairow2;
+		//System.out.println(totalrow);
+		SumRow.put(""+alphabet+"", totalrow);
+		System.out.println(SumRow);}
+	
+	}
